@@ -1,0 +1,66 @@
+Llamada 1: GET
+
+    • Método: GET
+    • URL: https://studio.xuanlanyoga.com/
+    • Cabeceras: 
+    •   - User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+    •   - Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.7
+    • Código de respuesta/Mensaje de respuesta: 200 (OK)
+    • Recurso: text/html; charset=utf-8.
+    • Tamaño de respuesta: 135 KB
+    • Tiempo de respuesta: 587 ms
+	• Descripción: Esta es la llamada principal que carga el contenido de la página web. Es una petición GET estándar para descargar el HTML.
+
+Llamada 2: GET
+
+    • Método: GET
+    • URL: https://alpha.uscreencdn.com/2160xnull/assets%2Fpage-editor%2Fxly-studio-dt.1708069959.jpg?auto=webp
+    • Cabeceras: 
+    •   - User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+    •   - Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+    • Código de respuesta/Mensaje de respuesta: 200 (OK)
+    • Recurso: image/webp.
+    • Tamaño de respuesta: 80 KB
+    • Tiempo de respuesta: 129 ms
+	• Descripción: Esta es la imagen que se muestra en la página principal.
+
+Llamada 3: GET
+
+    • Método: GET
+    • URL: https://ekr.zdassets.com/compose/dc0115de-2f27-4d4b-a8e9-de15297f507d
+    • Cabeceras: 
+    •   - User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+    •   - Accept: */*
+    • Código de respuesta/Mensaje de respuesta: 200 (OK)
+    • Recurso: application/json; charset=utf-8. 
+    • Tamaño de respuesta: 808 KB
+    • Tiempo de respuesta: 314 ms
+	• Descripción: Es un archivo JSON que gestiona la atención al cliente y contiene información sobre las funcionalidades del widget de soporte de Zendesk.
+
+Llamada 4: GET
+
+    • Método: GET
+    • URL: https://js.hsleadflows.net/leadflows.js
+    • Cabeceras: 
+    •   - User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+    •   - Accept: */*
+    • Código de respuesta/Mensaje de respuesta: 304 (Not Modified)
+    • Recurso: aplication/javascript; leadflows.js.
+    • Tamaño de respuesta: 1.1 KB
+    • Tiempo de respuesta: 147 ms
+	• Descripción: Este javascript se utiliza para gestionar funciones relacionadas con la recopilación de datos de leads o formularios en la página web. 
+
+Llamada 5: POST
+
+    • Método: POST
+    • URL: https://tracking.refersion.com/page_view
+    • Cabeceras:
+    •   - User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+		- Content-Type: text/plain;charset=UTF-8. 
+    •   - Accept: */*
+    • Cuerpo de la solicitud: key=pub_e8a2cb928d8e0b68358f
+    • Código de respuesta: 200 (OK)
+    • Recurso: Es un archivo json.
+    • Tamaño de respuesta: 604 B.
+    • Tiempo de respuesta: 409 ms.
+	• Descripción: Este archivo se utiliza para registrar las visitas de un usuario y analizar su comportamiento. 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="ejercicio8.css">
+</head>
+<body>
+    <h1>Formulario 1: Verificar usuario y contraseña</h1>
+    <form action="/check.html" method="post">
+        <div>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" pattern="abc@example.com" required>
+        </div>
+        <div>
+            <label for="pass">Password (5 caracteres min):</label>
+            <input type="password" id="pass" name="password" minlength="5" required>
+        </div>
+        <button type="submit">Verificar</button>
+    </form>
+
+    <br>
+
+    <h1>Formulario 2: Inscripción</h1>
+    <form action="/check.html" method="post">
+        <div>
+            <label for="name">Tu Nombre:</label>
+            <input type="text" id="name" name="user_name" required>
+        </div>
+        
+        <div>
+            <label for="bday">Fecha de nacimiento:</label>
+            <input type="date" id="bday" name="bday" required>
+        </div>
+
+        <div>
+            <label>Género:</label>
+            <div class="gender-options">
+                <label>
+                    <input type="radio" id="genderHombre" name="gender" value="hombre">
+                    Hombre
+                </label>
+                <label>
+                    <input type="radio" id="genderMujer" name="gender" value="mujer">
+                    Mujer
+                </label>
+                <label>
+                    <input type="radio" id="genderOtro" name="gender" value="otro">
+                    Otro
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <label for="mail2">Correo electrónico:</label>
+            <input type="email" id="mail2" name="user_mail" pattern="abc@example.com" required>
+        </div>
+
+        <div>
+            <label for="phone">Introduce tu número de teléfono:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required required maxlength="9" placeholder="666555444">
+        </div>
+
+        <div>
+            <label for="avatar">Selecciona tu imagen de perfil:</label>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" id="terms" name="terms" required>
+                Acepto los términos y condiciones
+            </label>
+        </div>
+        
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

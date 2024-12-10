@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas HTML</title>
+    <style>
+        Table, td, th {
+            border: black 0.5px solid;
+            text-align: center; /* Centra el texto */
+        }
+
+        td:first-child, th:first-child {
+            background-color: lightgreen; /* Fondo verde claro para la primera columna */
+        }
+
+        tbody tr:first-child td:not(:first-child) {
+            font-weight: bold;
+            background-color: rgb(228, 227, 160);
+        }
+
+        tbody tr:nth-child(5) td:not(:first-child) {
+            background-color: rgb(214, 211, 30);
+        }
+
+        tbody tr:nth-child(2) td:not(:nth-child(1)):not(:nth-child(2)) {
+            background-color: rgb(189, 84, 149);
+        }
+
+        .formacion {
+            background-color: rgb(22, 173, 173);
+            font-size: 0.7em;
+        }
+
+        .sprint {
+            background-color: rgb(214, 41, 41);
+        }
+        .cursiva {
+            font-style: italic; /* Aplica cursiva */
+        }
+        #almuerzo {
+            color : rgb(107, 105, 105);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Horario</td>
+            <td>LUNES</td>
+            <td>MARTES</td>
+            <td>MIERCOLES</td>
+            <td>JUEVES</td>
+            <td>VIERNES</td>
+        </tr>
+        <tr>
+            <td>08-09</td>
+            <td rowspan="2" class="sprint"><i>Sprint Planning</i></td>
+            <td><i>daily scrum</i></td>
+            <td><i>daily scrum</i></td>
+            <td><i>daily scrum</i></td>
+            <td><i>daily scrum</i></td>
+        </tr>
+        <tr>
+            <td>09-10</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="formacion">Formación</td>
+        </tr>
+        <tr>
+            <td>10-11</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="formacion">Formación</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11-11:30</td>
+            <td colspan="5" id="almuerzo">Almuerzo</td>
+        </tr>
+        <tr>
+            <td>11:30-12:30</td>
+            <td class="formacion">Formación</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2" class="sprint"><i>sprint review</i></td>
+        </tr>
+        <tr>
+            <td>11:30-12:30</td>
+            <td></td>
+            <td></td>
+            <td class="formacion">Formación</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11:30-12:30</td>
+            <td></td>
+            <td class="formacion">Formación</td>
+            <td></td>
+            <td></td>
+            <td class="sprint"><i>Sprint retrospective</i></td>
+        </tr>
+    </table>
+</body>
+</html>

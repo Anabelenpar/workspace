@@ -1,0 +1,31 @@
+3/10/24
+
+Servidores
+-Base de datos se comporta como un servidor 
+-Servidores web: node, apache, nginx
+-Archivos: fotos, documentos html...
+
+Express
+Capa o modulo que va sobre Node
+
+Los archivos html se lo pedimos al servidor, está ahí, nosotros nos lo podemos descargar a nuestro ordenador y guardarlo pero está en el servidor. 
+
+JavaScript está en todos los sitios. En Node, en el dispositivo, en navegador,...
+
+HTML 
+Es un lenguaje de etiquetas <etiquetas>
+
+br:salto de línea. </br>
+
+<head> : instrucciones, cosas que no se muestra en la web, idiomas, instrucciones...
+
+La etiqueta meta no tiene contenido y por eso no hay que cerrarla. 
+
+Metadato: es lo que no vas a ver en la web.
+
+Elementos de bloques: como cuadrados que van uno debajo de otro en la pagina web.
+Elementos en línea: sigue la misma linea y no cambia de linea. 
+<div>??
+Atributos de indentificacion. class vs id ??
+Un elemento tiene etiqueta, una etiqueta tiene atributo y los atributos están hechos de propiedad y valor. 
+

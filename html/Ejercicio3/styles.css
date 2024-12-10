@@ -1,0 +1,71 @@
+/* Estilo del encabezado */
+#header {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: #f0f0f0; /* Fondo para el encabezado */
+    padding: 20px; /* Espacio interior alrededor del contenido */
+    display: flex; /* Usamos flexbox para centrar contenido */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    border: 3px solid #ccc; /* Borde */
+}
+
+/* Estilo del h1 */
+#header h1 {
+    display: flex; /* Permite al título y la imagen alinearse en línea */
+    align-items: center; /* Centra la imagen y el texto verticalmente */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente */
+    color: #333; /* Color oscuro para el texto */
+    font-weight: bold; /* Negrita para el texto */
+    font-size: 2.5em; /* Tamaño del texto */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+/* Estilo de la imagen */
+#header img {
+    margin-left: 10px; /* Espacio a la izquierda de la imagen */
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+body {
+    background-image: url('pizzaconpiña.jpg');
+    background-size: cover;
+}
+
+section {
+    width: auto; /* Establece un ancho fijo */
+    margin: 0 auto; /* Centra la sección */
+}
+
+/* Estilo del artículo */
+.contenido_principal {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px 0; /* Espacio vertical entre artículos */
+}
+
+.copyright {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(83, 75, 75, 0.8); /* Fondo */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px 0; /* Espacio vertical entre artículos */
+}
+
+article > #bloque_titulo_receta > h2 {
+    color: rgb(192, 117, 31); /* Cambia el color del título */
+    font-size: 24px; /* Cambia el tamaño del título */
+}
+
+nav[data-nav="recetas"] {
+    font-size: 24px; /* Cambia el tamaño de la letra */
+    text-decoration: underline; /* Añade un subrayado */
+    color: rgb(209, 128, 15); /* Cambia el color del texto a un verde oscuro */
+}
+
+h2[data-titulo="pizza"] {
+    margin-top: 40px;
+}

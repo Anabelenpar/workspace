@@ -1,0 +1,38 @@
+.links {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 20px 1em 5vw; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px 0; /* Espacio vertical entre artículos */
+}
+
+.link {
+    font-size: 16px; /* Tamaño de fuente normal */
+    transition: font-size 0.3s ease; /* Transición suave para el cambio de tamaño */
+    color: #333; /* Color del enlace */
+    text-decoration: none; /* Quita el subrayado */
+
+}
+
+
+.link:hover {
+    font-size: 20px; /* Tamaño de fuente al pasar el ratón */
+    color: hsla(28, 71%, 51%, 0.813); /* Cambia el color del enlace */
+}
+
+
+.links ul li a {
+    color: rgb(52, 52, 202); /* Cambia el color de los enlaces en la lista */
+    text-decoration: underline; /* Subraya los enlaces */
+}
+
+.link::after {
+    content: "!!!"; /* Añade tres signos de exclamación al final del título */
+    color: red; /* Cambia el color de las exclamaciones */
+    font-size: 1.5em; /* Cambia el tamaño de las exclamaciones */
+    margin-left: 5px; /* Añade un espacio entre el texto y las exclamaciones */   
+}
+    
+    
+    
+    
+    

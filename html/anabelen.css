@@ -1,0 +1,46 @@
+/* Estilo para el contenedor */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Ocultar el checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Contenedor de las imágenes para superponerlas */
+.imagen {
+    position: relative;
+    width: 250px;
+    height: 350px;
+}
+
+/* Imagen de fondo */
+.imagen1 img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Imagen superpuesta, inicialmente oculta */
+.imagen2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+
+/* Al hacer clic, se muestra la segunda imagen */
+.toggle-checkbox:checked ~ .imagen .imagen2 img {
+    opacity: 1;
+}

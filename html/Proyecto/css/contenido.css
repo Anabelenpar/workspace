@@ -1,0 +1,264 @@
+/*eliminar estilos predestinados*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/*estilo de la cabecera*/
+header {
+    display: flex;
+    background-color: rgba(242, 242, 242, 0.9);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.5rem;
+    top: 0;
+    left: 0;
+    position: sticky;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.header-content .logo a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    margin-left: 2rem;
+}
+.header-content .logo a:hover {
+    transform: scale(1.1);
+}
+.header-content .logo a img {
+    width: 4rem;
+    height: auto;
+}
+.header-content nav {
+    display: flex;
+    gap: 1.5rem;
+}
+.header-content nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    background-color: #cababa;
+}
+.header-content nav a:hover {
+    color: #007bff;
+}
+@media (max-width:900px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+body {
+    background-image: url("../img/imagenprincipal.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*Estilo de la página 1contenido*/
+.container1 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+.container1 h1, h2 {
+    color: #555;
+    text-align: center;
+    padding: 2rem;
+}
+.europa h2, .asia h2, .america h2 {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #896b8f;
+    color: #ece2ec;
+}
+ul {
+    margin: 2rem auto;
+    padding-left: 0;
+    list-style-type: none;
+    max-width: 80%;
+    text-align: left;
+}
+ul li {
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #f0f0f0;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+ul li a {
+    text-decoration: none;  
+}
+ul li::marker {
+    content: '✈️';
+    font-size: 1.1em;
+    color: #ff5733;
+}
+@media (max-width: 768px) {
+    .container1 h1, h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del texto */
+        padding: 1rem;
+    }
+    ul li {
+        font-size: 1rem; /* Reduce el tamaño de los elementos de lista */
+        padding: 0.3rem; /* Reduce el padding para ahorrar espacio */
+        margin: 0.3rem auto; /* Ajusta los márgenes */
+        width: 90%; /* Un poco de espacio lateral */
+    }
+}
+
+/*Estilo de la página 2contenido*/
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+    text-align: center;
+}
+.container2 .texto {
+    padding: 2rem;
+    text-align: center;
+}
+.container2 .imagen {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.container2 .imagen {
+    margin-left: auto;
+    margin-right: auto;
+}
+.container2 .imagen .imagen1,
+.container2 .imagen .imagen2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease; /* Transición suave para el cambio de opacidad */
+}
+.container2 .imagen .imagen2 {
+    opacity: 0; /* Hace la imagen invisible inicialmente */
+}
+.reveal-check {
+    display: none; /* Oculta el checkbox */
+}
+.reveal-check:checked ~ .buton ~ .imagen1 {
+    opacity: 0; /* Oculta la imagen interrogante cuando el checkbox está activado */
+}
+.reveal-check:checked ~ .buton ~ .imagen1 ~ .imagen2 {
+    opacity: 1; /* Muestra la imagen cuando el checkbox está activado */
+}
+.container2 .imagen .buton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/*Estilo de la página 3contenido*/
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.container h2 {
+    color: #49424b;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+.container tr th {
+    background-color: #ba88c4;
+    color: aliceblue;
+    border: 1px solid #909090;
+    padding: 5px;
+    text-align: left;
+}
+.container table {
+    width: 70%;
+    height: 50%;
+    margin: 2rem auto;
+    padding: 0.5rem;position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container tr td {
+    color: black;
+    border: 1px solid #909090;
+    padding:5px;
+    height: 8vh;
+    white-space: normal;
+}
+.container tr:nth-last-of-type(odd){
+    background-color: #b9c4db;
+}
+.container tr:nth-last-of-type(even){
+    background-color: #f1cfef;
+}
+.container td[contenteditable="true"]:empty:before {
+    content: attr(data-placeholder);
+    color: gray;
+    font-style: italic;
+}
+/*estilo para footer*/
+footer{
+    background-color: #e0e0e0;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: inherit;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.container, footer {
+    box-sizing: border-box;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            filter: none;
+            transition: filter 4s, transform 4s;
+        }
+        .img1:hover {
+            transform: rotate(90deg);
+            filter: grayscale(100%);
+            transition-timing-function: ease;
+        }
+        .img2:hover {
+            transform: rotate(10deg);
+            filter: sepia(100%);
+            transition-timing-function: ease-in;
+        }
+        .img3:hover {
+            transform: rotate(10deg);
+            filter: brightness(0.3);
+            transition-timing-function: ease-out;
+        }
+        .img4:hover {
+            transform: rotate(10deg);
+            filter: contrast(150%);
+            transition-timing-function: ease-in-out;
+        }
+        .img5:hover {
+            transform: rotate(10deg);
+            filter: hue-rotate(100deg);
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+        .img6:hover {
+            transform: rotate(10deg);
+            filter: invert(70%);
+            transition-timing-function: linear;
+        }
+        .img7:hover {
+            transform: rotate(10deg);
+            filter: blur(3px);
+            transition-timing-function: steps(6, end);;
+        }
+        .img8:hover {
+            transform: rotate(10deg);
+            filter: saturate(200%);
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+        }
+        .img9:hover {
+            transform: rotate(10deg);
+            filter: drop-shadow(5px 5px 7px rgba(175, 18, 154, 0.5));
+            transition-timing-function: steps(20, jump-none);
+        }
+        .img10:hover {
+            transform: rotate(10deg);
+            filter: opacity(50%);
+            transition-timing-function: linear;
+        }
+        .img11:hover {
+            transform: rotate(10deg);
+            filter: grayscale(50%) sepia(50%);
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imágenes con Filtros al Pasar el Cursor</h1>
+    <div class="gallery">
+        <img class="img1" src="imagenes/nutrias (Copiar).jpg" alt="Imagen 1">
+        <img class="img2" src="imagenes/nutrias (Copiar 2).jpg" alt="Imagen 2">
+        <img class="img3" src="imagenes/nutrias (Copiar 3).jpg" alt="Imagen 3">
+        <img class="img4" src="imagenes/nutrias (Copiar 4).jpg" alt="Imagen 4">
+        <img class="img5" src="imagenes/nutrias (Copiar 5).jpg" alt="Imagen 5">
+        <img class="img6" src="imagenes/nutrias (Copiar 6).jpg" alt="Imagen 6">
+        <img class="img7" src="imagenes/nutrias (Copiar 7).jpg" alt="Imagen 7">
+        <img class="img8" src="imagenes/nutrias (Copiar 8).jpg" alt="Imagen 8">
+        <img class="img9" src="imagenes/nutrias (Copiar 9).jpg" alt="Imagen 9">
+        <img class="img10" src="imagenes/nutrias (Copiar 10).jpg" alt="Imagen 10">
+        <img class="img11" src="imagenes/nutrias (Copiar 11).jpg" alt="Imagen 11">
+        <img src="imagenes/nutrias.jpg" alt="Imagen Original" class="original">
+    </div>
+</body>
+</html>

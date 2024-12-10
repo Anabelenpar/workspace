@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Multimedia/icons8-favicon-16.png" type="image/x-icon">
+    <title>Vídeo con subtítulos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        video {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi Vídeo con subtítulos</h1>
+    <video controls autoplay loop >
+        <source src="Multimedia/chrome.mp4" type="video/mp4" />
+        <track src="Subtitulos/chrome-subtitles-en.vtt" label="English" kind="captions" srclang="en" default>
+        <track src="Subtitulos/chrome-subtitles-zh.vtt" label="Chino" kind="captions" srclang="zh">
+        <track src="Subtitulos/chrome-subtitles-es.vtt" label="Castellano" kind="captions" srclang="es">
+    </video>
+    
+</body>
+</html>

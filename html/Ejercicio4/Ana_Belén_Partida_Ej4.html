@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas HTML</title>
+    <style>
+        ol {
+            list-style-type: decimal;
+        }
+
+        ol>li:nth-child(even) {
+            background-color: grey;
+        } 
+
+        ul>li::marker {
+            content: '☠️';
+            font-size: 1.1em;
+        }
+
+        ul>li:last-child::marker {
+            content: '✔️ ';
+            font-size: 1.5em;
+            color: rgb(24, 189, 24);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Listas Personalizadas</h1>
+
+    <h2>Corredores a partir del vigésimo (20):</h2>
+    <ol>
+        <li value="20">Juanita</li>
+        <li value="21">Pepito</li>
+        <li value="22">Jaimito</li>
+        <li value="23">Pepita</li>
+        <li value="24">Juanito</li>
+        <li value="25">Jaimita</li>
+        <li value="26">Joselito</li>
+        <li value="27">Joselita</li>
+        <li value="28">Manolito</li>
+    </ol>
+
+    <h2>Versiones de HTML</h2>
+    <ul>
+        <li>HTML 1</li>
+        <li>HTML 2</li>
+        <li>HTML 3</li>
+        <li>HTML 4</li>
+        <li>HTML 5</li>
+    </ul>
+
+</body>
+</html>

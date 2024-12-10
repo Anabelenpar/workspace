@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro con pausa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .cronometro-container {
+            text-align: center;
+        }
+        input[type="text"] {
+            font-size: 2rem;
+            width: 50px;
+            text-align: center;
+            margin: 0 5px;
+        }
+        button {
+            font-size: 1rem;
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cronometro-container">
+        <h1>Cronómetro</h1>
+        <label for="minutos">Minutos</label>
+        <input type="text" id="minutos" value="00" readonly>
+        <label for="segundos">Segundos</label>
+        <input type="text" id="segundos" value="00" readonly>
+        <div>
+            <button id="iniciar">Iniciar</button> 
+            <button id="pausar" disabled>Pausar</button>
+            <button id="reset">Reiniciar</button>
+        </div>
+        <p id="estado">En pausa</p>
+    </div>
+
+    <script src="cronometro.js" type="module"></script>
+    <script src="ui.js" type="module"></script>
+</body>
+</html>

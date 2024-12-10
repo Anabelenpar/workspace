@@ -1,0 +1,206 @@
+/*Elimino estilos predestinados*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/*estilo de la cabecera*/
+header {
+    display: flex;
+    background-color: rgba(242, 242, 242, 0.9);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.5rem;
+    top: 0;
+    left: 0;
+    position: sticky;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.header-content .logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    margin-left: 2rem;
+}
+.header-content .logo a:hover {
+    transform: scale(1.1);
+}
+.header-content .logo a img {
+    width: 4rem;
+    height: auto;
+}
+.header-content nav {
+    display: flex;
+    gap: 1.5rem;
+}
+.header-content nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    background-color: #cababa;
+}
+.header-content nav a:hover {
+    color: #007bff;
+}
+@media (max-width:900px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/*Estilo del body*/
+body {
+    min-height: 100vh;
+    background: url("../img/imagencontacto.jpg") no-repeat center center/cover;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2vw;
+}
+/*Estilo de formulario*/
+.formularios {
+    position: relative;
+    width: 90%;
+    background: rgb(68, 140, 173);
+    color:aliceblue;
+    border-radius: 0.625rem;
+    max-width: 500px;
+    box-shadow: 0px 0.25px 0.5rem rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin: 2vw;
+}
+.formularios h1 {
+    text-align: center;
+    padding: 0.625rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 0.0625rem solid rgba(255, 255, 255,0.3);
+}
+form {
+    padding: 0 2rem;
+}
+.input-box{
+    position: relative;
+    border-bottom: 0.125rem solid rgba(255, 255, 255,0.3);
+    margin: 2rem 0;
+}
+.input-box input {
+    width: 100%;
+    padding: 0 0.3125rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+    color: #adadad;
+}
+.input-box label {
+    color: #f0f0f0;
+    font-size: 1rem;
+    pointer-events: none;
+}
+.input-box input::placeholder {
+    color: #889ca3;
+}
+.button{
+    width:100%;
+    height: 2.5rem;
+    border: 0.0625rem solid;
+    background: rgb(77, 31, 204);
+    border-radius: 1.6rem;
+    font-size: 1.2rem;
+    color: #adadad;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+    transition: background 0.3s, transform 0.2s;
+}
+.button-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: inherit;
+    color: #adadad;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: inherit;
+}
+.button:hover {
+    background: rgb(131, 131, 122);
+}
+/*Estilo del iframe*/
+.ubication {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: transparent; /* Fondo ligero para separar visualmente */
+    margin: 2rem auto;
+    margin-top: 0;
+    max-width: 80%; /* Limitar ancho máximo para evitar que se extienda mucho */
+}
+.ubication h3 {
+    font-size: 1.4rem;
+    color: rgb(235, 182, 235);
+    margin-bottom: 1rem;
+}
+.ubication p {
+    font-size: 1rem;
+    color: #f7f0f6;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+.ubication iframe {
+    width: 100%;
+    height: 30vh;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/*Estilo para footer*/
+footer{
+    background-color: #e0e0e0;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.container, footer {
+    box-sizing: border-box;
+}

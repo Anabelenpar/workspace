@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InTravel-Contacto</title>
+    <link rel="icon" href="img/icono.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="principal.html">
+                    <img src="img/icono.png" alt="logo de Intravel">
+                    <h2>InTravel</h2>
+                </a>
+            </div>
+            <nav>
+                <a href="1contenido.html">Viaja con nosotros</a>
+                <a href="2contenido.html">Déjate sorprender</a>
+                <a href="3contenido.html">Tu diario de viajes</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main class="formularios">
+            <form method="post">
+                <h1>Contáctanos</h1>
+                <p>Rellena el formulario si quieres que nos pongamos en contacto contigo</p>
+                <div class="input-box">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Correo Electrónico:</label>
+                    <input 
+                        type="email" 
+                        id="mail" 
+                        name="user_mail" 
+                        placeholder="usuario@dominio.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        title="Por favor ingrese un correo electrónico válido: usuario@dominio.com"
+                        autocomplete="email"
+                        required>
+                </div>
+                    <label for="phone">Teléfono:</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        pattern="[0-9]{9}" 
+                        maxlength="9" 
+                        placeholder="666555444" 
+                        title="Debe ser un número de 9 dígitos sin espacios." 
+                        required>
+                <div class="input-box">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit" class="button-link">Enviar</button> 
+                </div>
+            </form>
+        </main>
+    </div>
+    <div class="ubication">
+        <h3>O si lo prefieres... Visítanos en nuestras oficinas</h3>
+        <p>Calle M, 10, 31192 Tajonar, Navarra<br>
+            Tlf 654763498</p>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2928.6041859552615!2d-1.6371400233536566!3d42.77557560874844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd509310cf4619c9%3A0x44905d5a2bca10e4!2sVeridas!5e0!3m2!1sen!2ses!4v1729784109244!5m2!1sen!2ses" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <a href="contacto.html"><i class='bx bxs-envelope'></i>Contacto</a>
+        <i class='bx bxl-instagram'>Instagram</i>
+        <i class='bx bxl-tiktok' >Tiktok</i>
+        <p>&copy; 2024 InTravel</p>
+    </footer>
+</body>
+</html>

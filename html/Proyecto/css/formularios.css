@@ -1,0 +1,120 @@
+* {  /*Elimino estilos predeterminados y ajusto la fuente*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+/*Estilo del body en general*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../img/imagenformularios.jpg") no-repeat center center/cover;
+    padding: 2vw;
+}
+/*Estilo para formularios*/
+.formularios {
+    position: relative;
+    width: 90%;
+    background: rgb(68, 140, 173);
+    color:aliceblue;
+    border-radius: 0.625rem;
+    max-width: 500px; /*Limito ancho max*/
+    box-shadow: 0px 0.25px 0.5rem rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin: 2vw;
+}
+.formularios h1 {
+    text-align: center;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.8rem;
+    border-bottom: 0.0625rem solid rgba(255, 255, 255,0.3);
+}
+form {
+    padding: 0 2rem;
+}
+.input-box{
+    position: relative;
+    border-bottom: 0.125rem solid rgba(255, 255, 255,0.3);
+    margin: 2rem 0;
+}
+.input-box input {
+    width: 100%;
+    padding: 0 0.3125rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+    color: #adadad;
+}
+.input-box label {
+    color: #f0f0f0;
+    font-size: 1rem;
+    pointer-events: none;
+}
+.input-box input::placeholder {
+    color: #889ca3;
+}
+.remember{
+    margin: 0 0 1rem;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    color: #adadad; 
+    font-size: 0.85rem;
+}
+.forget{
+    margin: 0 0 1rem;
+    color: #76c6e6;
+    cursor: pointer;
+}
+.forget a{
+    font-size: 0.85rem;
+    display: inline-block;
+    transition: transform 0.3s; /* Transición suave para el cambio de tamaño */
+}
+
+.forget a:hover{
+    transform: scale(1.1); /* Aumenta el tamaño del texto al 120% */
+}
+.forget p{
+   color: #adadad; 
+   font-size: 0.845rem;
+}
+.button{
+    width:100%;
+    height: 2.5rem;
+    border: 0.0625rem solid;
+    background: rgb(77, 31, 204);
+    border-radius: 1.6rem;
+    font-size: 1.2rem;
+    color: #adadad;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+    transition: background 0.3s, transform 0.2s;
+}
+.button-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: inherit;
+    color: #adadad;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: inherit;
+}
+.button:hover {
+    background: rgb(131, 131, 122);
+}
